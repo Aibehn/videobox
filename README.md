@@ -32,6 +32,10 @@ Se deberan rellenar los datos de la base de datos de la forma:
     * **Database name**: nombre de la base de datos
  * Asegurarse que config/database.php se pueda escribir en ella ( chmod 777 ).
  * Al terminar la instalación es recomendable eliminar la carpeta /install
+ *  **Wowza**: configurar wowza para que la aplicacion VOD trabaje sobre el directorio 'content/web'.
+ *  Consideraciones finales:
+    *  Es posible que se tenga que revisar la ruta de subida de los archivos en 'applicacion/controllers/Upload.php -> do_upload()' y adaptarla.
+    *  Adicionalmente, adaptar la ruta en los scripts dentro de 'content'.
 
 ##Demo
 
