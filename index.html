@@ -73,24 +73,23 @@ git clone https://github.com/Aibehn/videobox.git
 <li>
 <strong>config/config.php</strong> cambiar 'base_url' a la url del servidor</li>
 <li>
-<strong>config/database.php</strong> añadir información de la base de datos
+<strong>config/database.php</strong> añadir información de la base de datos:
+Para facilitar la tarea se ha añadido un script de instalación:
+<strong>/install/index.php</strong>
+Se deberan rellenar los datos de la base de datos de la forma:
 
 <ul>
 <li>
-<strong>DDL base de datos</strong> :</li>
+<strong>Hostname</strong>: dirección del servidor:puerto</li>
+<li>
+<strong>Username</strong>: nombre de usuario con acceso a la base de datos</li>
+<li>
+<strong>Password</strong>: contraseña relacionada con el usuario</li>
+<li>
+<strong>Database name</strong>: nombre de la base de datos</li>
+<li>Asegurarse que config/database.php se pueda escribir en ella ( chmod 777 ).</li>
+<li>Al terminar la instalación es recomendable eliminar la carpeta /install</li>
 </ul>
-
-<pre><code>CREATE TABLE videos
-(
-id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
-title VARCHAR(128) NOT NULL,
-videoid VARCHAR(128) NOT NULL,
-text TEXT NOT NULL,
-name VARCHAR(128) NOT NULL,
-`mpeg-dash` TINYINT(1) DEFAULT '0' NOT NULL
-);
-CREATE INDEX videoid ON videos (videoid);
-</code></pre>
 </li>
 </ul>
 
@@ -99,10 +98,10 @@ CREATE INDEX videoid ON videos (videoid);
 
 <ul>
 <li>
-<strong>Develoment</strong> <a href="http://videobox.azurewebsites.net/index.php">http://videobox.azurewebsites.net/index.php</a>
-</li>
+<strong>Develoment</strong> <a href="http://videobox.azurewebsites.net/index.php">http://videobox.azurewebsites.net/index.php</a> (Site Offline)</li>
 <li>
-<strong>Release</strong> &lt;&gt;</li>
+<strong>Release</strong> <a href="http://trabajomultimedia.westeurope.cloudapp.azure.com/">http://trabajomultimedia.westeurope.cloudapp.azure.com/</a>
+</li>
 </ul>
 
 <h2>
