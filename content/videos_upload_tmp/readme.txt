@@ -1,0 +1,1 @@
+Directorio temporal de subida de archivos

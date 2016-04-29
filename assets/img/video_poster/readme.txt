@@ -1,0 +1,1 @@
+Ruta donde se generan los posters de los videos
