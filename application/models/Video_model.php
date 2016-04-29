@@ -28,21 +28,28 @@ class Video_model extends CI_Model {
         //Devuelve el video por su id.
     }
 
-    public function set_videos()
+    public function set_videos($videoid, $name)
     {
         $this->load->helper('url');
 
-        $videoid = url_title($this->input->post('name'), 'dash', TRUE);
+	if(!$videoid){	
+	        $videoid = url_title($this->input->post('title'), 'dash', TRUE);
+	}
+	if(!$name){	
+	        $name = $videoid;	
+	}
+
         $mpeg_dash = ($this->input->post('mpeg-dash'))?1:0;
         
         $data = array(
             'title' => $this->input->post('title'),
             'videoid' => $videoid,
             'text' => $this->input->post('text'),
-            'name' => $this->input->post('name'),
+            'name' => $name,
             'mpeg-dash' => $mpeg_dash
         );
 
-        return $this->db->insert('videos', $data);
+        return $this->db->insert('videos', $data);	
+	
     }
 }

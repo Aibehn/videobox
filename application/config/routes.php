@@ -56,7 +56,7 @@ $route['user/logout'] = 'user/logout';
 $route['user/profile/(:any)'] = 'user/profile/$1';
 
 $route['videos/sucess'] = 'videos/sucess';
-$route['videos/upload'] = 'videos/upload';
+$route['upload'] = 'upload';
 $route['videos/(:any)'] = 'videos/view/$1';
 $route['videos'] = 'videos';
 $route['(:any)'] = 'pages/view/$1';

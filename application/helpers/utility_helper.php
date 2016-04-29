@@ -38,14 +38,13 @@ if (!function_exists('video_url_dash'))
 
     function video_url_dash($videoid='')
     {
-        $port_wowza='1935';
 
         $trimmedBaseUrl = parse_url(base_url());
 
         //$videoid="sample";
         //http://10.30.1.26:1935/vod/sample/manifest.mpd
 
-        return "http://".$trimmedBaseUrl['host'].":$port_wowza"."/vod/".$videoid."/manifest.mpd";
+        return "http://".$trimmedBaseUrl['host']."/content/web/".$videoid.".mpd";
 
     }
 }

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="<?php echo asset_url('css/bootstrap.min.css') ?>">
     <style>
         body {
+	    background-image: url("<?php echo asset_url('img/fotoFondo.jpg') ?>");
+	    background-size: cover;
             padding-top: 50px;
             padding-bottom: 20px;
         }

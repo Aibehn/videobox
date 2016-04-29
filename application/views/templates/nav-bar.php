@@ -14,7 +14,7 @@
 
             <ul class="nav navbar-nav">
                 <?php echo nav_item('Home','home')?>
-                <?php echo nav_item('Upload','videos/upload')?>
+                <?php echo nav_item('Upload','upload')?>
                 <?php echo nav_item('Recent Videos','videos')?>
                 <?php echo nav_item('About','about')?>
             </ul>
