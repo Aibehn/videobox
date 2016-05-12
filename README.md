@@ -41,6 +41,8 @@ Se deberan rellenar los datos de la base de datos de la forma:
 
 * **Develoment** <http://videobox.azurewebsites.net/index.php> (Site Offline)
 * **Release** <http://trabajomultimedia.westeurope.cloudapp.azure.com/>
+    * **User**: admin@admin.com
+    * **Password**: password
 
 ##Tecnologías utilizadas
 * **[CodeIgniter](https://codeigniter.com)** v3.0.6 - Framework PHP
